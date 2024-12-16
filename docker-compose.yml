@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app1:
+    build:
+      context: ./Fake-Bank
+    ports:
+      - "5000:5000"
+  app2:
+    build:
+      context: ./Fake-IT
+    ports:
+      - "5005:5005"
